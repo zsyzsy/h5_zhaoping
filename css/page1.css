@@ -1,0 +1,906 @@
+@import url("css3.min.css");
+@import url("control_css3.min.css");
+/*音乐*/
+.music{
+    position: absolute;
+    z-index: 1000;
+    right: 0px;
+    top: 0px;
+    padding: 10px;
+    width: 25px;
+    height: 25px;
+}
+.music .music-btn {
+    display: block;
+    padding-left: 1px;
+    width: 25px;
+    height: 25px;
+    background-image: url(../media/musicKey.png);
+    background-size: 100% 100%;
+}
+.music .music-btn.play {
+    background-image: url(../media/musicKey.png);
+    animation:musicKey 3s infinite linear;
+    -moz-animation:musicKey 3s infinite linear;
+    -o-animation:musicKey 3s infinite linear;
+    -webkit-animation:musicKey 3s infinite linear ;
+}
+
+span#width {
+    position: absolute;
+    height: 100%;
+    background-color: #08A1EF;
+    transition: all  1s cubic-bezier(.26,.86,.44,.985);
+}
+span#yeshu {
+    width: 30px;
+    height: 20px;
+    outline: 1px solid;
+    position: absolute;
+    bottom: 9px;
+    right: 3%;
+    color: white;
+}
+
+.preserve3D{
+    transform-style:preserve-3d;/*使被转换的子元素保留其 3D 转换*/
+    perspective-origin:50% 50%;/*设置 3D 元素的基点位置*/
+    /*perspective：设置元素被查看位置的视图*/
+    perspective:1200px;
+
+    -webkit-transform-style:preserve-3d;
+    -webkit-perspective-origin:50% 50%;
+    -webkit-perspective:1200px;
+}
+ul li{
+    list-style:none;
+}
+/*================================*/
+.page1_1{
+    margin: 4% auto 0;
+    width: 100%;
+    height: 30%;
+    background: url(../image/page1_1_1.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page1_234{
+    margin-top: 3%;
+    height: 28%;
+    width: 100%;
+    overflow: hidden;
+}
+.page1_2{
+    margin-top: 25%;
+    margin-left: 9%;
+    width: 16%;
+    height: 40%;
+    background: url(../image/page1_2.png) no-repeat;
+    background-size: 100%;
+    float: left;
+    transform:scale(0);
+}
+.page1_3{
+    width: 50%;
+    position: absolute;
+    left: 25%;
+    height: 100%;
+    background: url(../image/page1_3.png) no-repeat;
+    background-size: 100%;
+    transform-origin: 0% 0%;
+    transform:scale(0);
+}
+.page1_4{
+    margin-top: 22%;
+    margin-right: 9%;
+    width: 16%;
+    height: 40%;
+    float: right;
+    background: url(../image/page1_4.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page1_5{
+    position: relative;
+    margin: 2% auto 0;
+    width: 86%;
+    height: 13%;
+    overflow: hidden;
+}
+.page1_5_1{
+    width: 100%;
+    height: 100%;
+    background: url(../image/page1_5_1.png) no-repeat;
+    background-size: 100%;
+    transform: translateX(110%)
+}
+.page1_5_2{
+    width: 94%;
+    height: 94%;
+    background: url(../image/page1_5_2.png) no-repeat;
+    background-size: 100%;
+    position: absolute;
+    top: 11%;
+    left: 3%;
+    transform:scale(0);
+}
+.page_67{
+    margin-top: 3%;
+    height:5%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.page1_6{
+    margin-left: 6%;
+    width:43%;
+    height: 100%;
+    float: left;
+    background: url(../image/page1_6.png) no-repeat;
+    background-size: 100%;
+    transform: translateX(-150%)
+}
+.page1_7{
+    width:43%;
+    height: 100%;
+    float: right;
+    margin-right: 6%;
+    background: url(../image/page1_7.png) no-repeat;
+    background-size: 100%;
+    transform: translateX(150%)
+}
+.page1_8{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 8%;
+    background: url(../image/page1_8.png) no-repeat;
+    background-size: 100%;
+}
+/*第二页*/
+.page2_1{
+    width: 90%;
+    height: 18%;
+    margin: 4% auto 0;
+    position: relative;
+    overflow: hidden;
+
+}
+.page2_1_1{
+    width: 100%;
+    height: 100%;
+    background: url(../image/page2_1_1.png) no-repeat;
+    background-size: 100%;
+    transform: translateX(110%)
+}
+.page2_1_2{
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    width: 80%;
+    height: 100%;
+    background: url(../image/page2_1_2.png) no-repeat;
+    background-size: 100%;
+    transform: translateX(150%)
+}
+.page2_23{
+    width: 100%;
+    height: 40%;
+    overflow: hidden;
+}
+.page2_2{
+    width: 38%;
+    height: 100%;
+    float: left;
+    position: relative;
+}
+.page2_2_1{
+    width: 80%;
+    height: 67%;
+    margin-top: 18%;
+    margin-left: 28%;
+    background: url(../image/page2_2_1.png) no-repeat;
+    background-size: 100%;
+    transform: scale(0);
+}
+.page2_2_2{
+    width: 91%;
+    height: 100%;
+    position: absolute;
+    top: 7%;
+    left: 22%;
+    background: url(../image/page2_2_2.png) no-repeat;
+    background-size: 100%;
+    transform: scale(0);
+}
+.page2_2_3{
+    position: absolute;
+    top: 20%;
+    left: 37%;
+    width: 65%;
+    height: 24%;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    transform: scale(0);
+}
+.page2_3{
+    width: 38%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+.page2_3_1{
+    width: 80%;
+    height: 67%;
+    margin-top: 45%;
+    background: url(../image/page2_3.png) no-repeat;
+    background-size: 100%;
+    transform: scale(0);
+}
+.page2_3_2{
+    width: 91%;
+    height: 67%;
+    position: absolute;
+    top: 21%;
+    right: 14%;
+    background: url(../image/page2_2_2.png) no-repeat;
+    background-size: 100%;
+    transform: scale(0);
+}
+.page2_3_3{
+    position: absolute;
+    top: 33%;
+    right: 26%;
+    width: 65%;
+    height: 24%;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    transform:scale(0);
+}
+.page2_456{
+    width: 100%;
+    height:51%;
+    margin-top: -20%;
+    overflow: hidden;
+}
+.page2_4{
+    width: 38%;
+    height: 53%;
+    float: left;
+    position: relative;
+}
+.page2_4_1{
+    width: 80%;
+    height: 78%;
+    margin-top: 20%;
+    margin-left: 11%;
+    background: url(../image/page2_4.png) no-repeat;
+    background-size: 100%;
+    transform: scale(0);
+}
+.page2_4_2{
+    width: 91%;
+    height: 100%;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    background: url(../image/page2_2_2.png) no-repeat;
+    background-size: 100%;
+    transform: scale(0);
+}
+.page2_4_3 {
+    position: absolute;
+    top: 30%;
+    left: 18%;
+    width: 65%;
+    height: 24%;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    transform: scale(0);
+}
+.page2_5{
+    width: 50%;
+    height: 100%;
+    float: left;
+    margin-left: -10%;
+    position: relative;
+}
+.page2_5_1{
+    width: 100%;
+    height: 100%;
+    margin-top: 11%;
+    margin-left: 11%;
+    background: url(../image/page2_6_1.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page2_5_2 {
+    position: absolute;
+    top: 20%;
+    left: 21%;
+    width: 80%;
+    height: 31%;
+    line-height: 37px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    transform:scale(0);
+}
+.page2_5_2 span {
+}
+.page2_6{
+    width: 38%;
+    height: 100%;
+    float: right;
+    margin-top: -34%;
+    position: relative;
+}
+.page2_6_1{
+    width: 80%;
+    height: 100%;
+    margin-left: -27%;
+    margin-top: -17%;
+    background: url(../image/page2_5.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page2_6_2{
+    width: 91%;
+    height: 100%;
+    position: absolute;
+    top: -9%;
+    left: -32%;
+    background: url(../image/page2_2_2.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page2_6_3 {
+    position: absolute;
+    top: 3%;
+    left: -17%;
+    width: 65%;
+    height: 24%;
+    line-height: 24px;
+    color: white;
+    text-align: center;
+    transform:scale(0);
+}
+/*第三页*/
+
+.page3_4{
+    width: 100%;
+    height: 81%;
+    background: url(../image/page3_4.png) no-repeat;
+    background-position: 48% 1%;
+    background-size: 117%;
+    transform:scale(0);
+}
+.page3_1{
+    position: absolute;
+    top: 15%;
+    width: 80%;
+    height: 30%;
+    left: 10%;
+    background: url(../image/page3_1.png)no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page3_2{
+    width: 29%;
+    height: 20%;
+    position: absolute;
+    top: 1%;
+    left: 3%;
+}
+.page3_2_1{
+    width: 100%;
+    height: 100%;
+    background: url(../image/page3_2_1.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page3_2_2 {
+    width: 84%;
+    line-height: 20px;
+    position: absolute;
+    top: 20%;
+    left: 8%;
+    color: white;
+    transform:scale(0);
+}
+.page3_3{
+    position: absolute;
+    bottom: 1%;
+    width: 100%;
+    height: 39%;
+    background: url("../image/page3_3.png") no-repeat;
+    background-size: 100%;
+    transform:translateY(100%);
+}
+.page3_text {
+    position: absolute;
+    bottom: 30%;
+    width: 40%;
+    height: 22px;
+    line-height: 0;
+    text-align: center;
+    left: 30%;
+    color: white;
+    font-weight: 600;
+    transform:scale(0);
+}
+.page3_text_text {
+    padding: 0 0 0 3%;
+    position: absolute;
+    line-height: 13px;
+    text-align: left;
+    color: white;
+    bottom: 0%;
+    transform:scale(0);
+}
+/*第四页*/
+
+.page4_1{
+    background: url(../image/page4_1.png) no-repeat;
+    height: 43%;
+    margin: 17% auto 0 24%;
+    width: 70%;
+    background-size: 100%;
+    transform: scale(0);
+}
+
+.page4_2{
+    position: absolute;
+    top: 0;
+    background: url(../image/page4_2.png) no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: 100%;
+    transform: rotate(-60deg);
+}
+
+ul.page4_renyuan {
+    padding: 0;
+    position: absolute;
+    top: 2%;
+    left: 6%;
+    color: white;
+    line-height: 20px;
+    transform: scale(0);
+}
+
+
+.page4_3{
+    position: absolute;
+    bottom: 1%;
+    background: url(../image/page4_3_1.png) no-repeat;
+    height: 45%;
+    width: 98%;
+    margin-left: 1%;
+    background-size: 100%;
+    transform:scale(0);
+}
+
+.page4_4{
+    position: absolute;
+    bottom: 41%;
+    background: url(../image/page4_4_1.png) no-repeat;
+    height: 5%;
+    width: 98%;
+    margin-left: 1%;
+    background-size: 100%;
+    transform:scale(0);
+}
+
+.page4_5{
+    position: absolute;
+    bottom: 41%;
+    background: url(../image/page4_5_1.png) no-repeat;
+    height: 5%;
+    width: 98%;
+    margin-left: 1%;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page4_zhiwei {
+    margin: 7% auto 0;
+    width: 40%;
+    left: 30%;
+    line-height: 0;
+    color: white;
+    transform:scale(0);
+}
+ul.page4_jieshao {
+    padding: 0 0 0 3%;
+    line-height: 15px;
+    text-align: left;
+    margin-top: -4px;
+    color: white;
+    transform: scale(0);
+}
+
+/*第五页*/
+.page5_1{
+    width: 100%;
+    height: 70%;
+    background: url("../image/page5_4.png") no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page5_2{
+    position: absolute;
+    top: 6%;
+    width: 100%;
+    height: 30%;
+    background: url(../image/page5_2.png) no-repeat;
+    background-size: 100%;
+    transform: translateY(-100%);
+}
+.page5_3{
+    position: absolute;
+    top: 4%;
+    left: 2%;
+    width: 32%;
+    height: 30%;
+}
+.page5_3_1{
+    width: 100%;
+    height: 100%;
+    background: url(../image/page5_1.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page5_3_2{
+    line-height: 25px;
+    color: white;
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    transform:scale(0);
+}
+.page5_4 {
+    position: absolute;
+    top: 22%;
+    width: 100%;
+    height: 35%;
+    background: url(../image/page5_3.png) no-repeat;
+    background-size: 100%;
+    transform: translateX(-150%)
+}
+.page5_6 {
+    position: absolute;
+    bottom: 1%;
+    width: 101%;
+    left: 0%;
+    height: 31%;
+    background: url(../image/page5_6.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page5_5 {
+    position: absolute;
+    bottom: 1%;
+    width: 101%;
+    left: 0%;
+    height: 31%;
+    background: url(../image/page5_5.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page5_7{
+    position: absolute;
+    bottom: 25%;
+    width: 100%;
+    color: white;
+    height: 31%;
+    transform:scale(0);
+}
+.page5_text{
+    padding: 0 0 0 4%;
+    position: absolute;
+    bottom: 0%;
+    width: 98%;
+    color: white;
+    line-height: 16px;
+    text-align: left;
+    transform: scale(0);
+}
+
+/*第六页*/
+.page6_text {
+    margin-top: 3%;
+    height: 20%;
+    overflow: hidden;
+    width: 100%;
+    color: white;
+}
+.page6_h1 {
+    margin-top: 5%;
+    line-height: 0;
+    font-weight: 600;
+    transform:scale(0);
+}
+ul.page6_fuli {
+    line-height: 24px;
+    padding: 0;
+}
+.page6_fuli_li1,.page6_fuli_li2,.page6_fuli_li3{
+    transform:scale(0);
+}
+.page6_fuli .yellow{
+    color: #f7ca1d;
+}
+.page6_fuli .blue{
+    color: #5fcdfb;
+}
+.page6_content{
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    height: 52%;
+}
+.page6_1 {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    background: url(../image/page6_1.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page6_dingwei{
+    position: absolute;
+    top: 20%;
+    left: 30%;
+    width: 14%;
+    height: 20%;
+    background: url(../image/page6_dingwei.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page6_naozhong{
+    position: absolute;
+    top: 56%;
+    left: 6%;
+    width: 14%;
+    height: 16%;
+    background: url(../image/page6_naozhong.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page6_liwu{
+    position: absolute;
+    top: 32%;
+    right: 6%;
+    width: 14%;
+    height: 16%;
+    background: url(../image/page6_liwu.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page6_jinqian{
+    position: absolute;
+    top: 72%;
+    right: 4%;
+    width: 14%;
+    height: 17%;
+    background: url(../image/page6_jinqian.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page6_fuli_content{
+    width: 100%;
+    height: 13%;
+    overflow: hidden;
+}
+.page6_fuli_box{
+    width: 33%;
+    height: 100%;
+    float: left;
+}
+.page6_fuli_box p{
+    line-height: 0;
+    color: white;
+}
+.page6_fuli_img1 {
+    margin-left: 27%;
+    margin-top: -5%;
+    width: 50%;
+    height: 65%;
+    background: url(../image/page6_yuan_1.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page6_fuli_img2 {
+    margin-left: 21%;
+    margin-top: -4%;
+    width: 64%;
+    height: 65%;
+    background: url(../image/page6_yuan_2.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page6_fuli_img3{
+    margin-left: 16%;
+    margin-top: -5%;
+    width: 65%;
+    height: 65%;
+    background: url(../image/page6_yuan_3.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page6_fuli_box1{
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+.page6_fuli_box1 p{
+    line-height: 0;
+    color: white;
+}
+p.p4 {
+    text-align: right;
+    margin-right: 20%;
+}
+.page6_fuli_img4{
+    margin-left: 42%;
+    margin-top: -8%;
+    width: 37%;
+    height: 77%;
+    background: url(../image/page6_yuan_4.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+
+p.p5 {
+    text-align: left;
+    margin-left: 20%;
+}
+.page6_fuli_img5{
+    margin-top: -5%;
+    width: 36%;
+    margin-left: 19%;
+    height: 70%;
+    background: url(../image/page6_yuan_5.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.p1,.p2,.p3,.p4,.p5{
+    transform:scale(0);
+}
+
+
+
+
+/*第七页*/
+ul{
+    padding: 0;
+}
+.page7_1{
+    width: 100%;
+    height: 65%;
+    background: url(../image/page7_1.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page7_bottom {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 7%;
+    background: url(../image/page7_bottom.png) no-repeat;
+    background-size: 100%;
+    transform:translateY(100%);
+}
+.page7_2 {
+    position: absolute;
+    top: 44%;
+    left: 32%;
+    width: 40%;
+    height: 9%;
+    background: url(../image/page7_2.png) no-repeat;
+    background-size: 100%;
+    transform:scale(0);
+}
+.page7_yuan {
+    position: absolute;
+    left: 25%;
+    top: 58%;
+    width: 50%;
+    height: 6%;
+    /*outline: 1px solid;*/
+}
+.page7_yuan1{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    line-height: 0;
+    transform:scale(0);
+}
+.page7_yuan2{
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    line-height: 0;
+    transform:scale(0);
+}
+.page7_yuan3{
+    position: absolute;
+    top: 0%;
+    left: 20%;
+    line-height: 0;
+    transform:scale(0);
+}
+.page7_h1{
+    position: absolute;
+    top: 47%;
+    left: 39%;
+    line-height: 0;
+    color: #0670c2;
+    font-weight: 600;
+    transform:scale(0);
+}
+.page7_tel {
+    position: absolute;
+    top: 68%;
+    width: 50%;
+    left: 25%;
+    height: 5%;
+    line-height: 0;
+    color: white;
+    /*background: url(image/page7_tel.png) no-repeat;*/
+    /*background-size: 100%;*/
+    transform:scale(0);
+}
+.page7_tel_tel {
+    position: absolute;
+    top: 0%;
+    width: 50%;
+    left: -6%;
+}
+.page7_num {
+    position: absolute;
+    top: 30%;
+    width: 50%;
+    left: 12%;
+}
+span.page7_num_size {
+}
+.page7_text {
+    padding: 0;
+    width: 100%;
+    position: absolute;
+    top: 73%;
+    height: 22%;
+    line-height: 25px;
+    text-align: center;
+    color: white;
+
+
+}
+.page-text li{
+    margin-top: 10px;
+
+}
+.page7_text1,.page7_text2,.page7_text3{
+    transform:scale(0);
+}
+
+@media screen and (min-width: 320px) {html{font-size:312.5%;}}
+@media screen and (min-width: 360px) {html{font-size:351.5625%;}}
+@media screen and (min-width: 375px) {html{font-size:366.211%;}}
+@media screen and (min-width: 400px) {html{font-size:390.625%;}}
+@media screen and (min-width: 414px) {html{font-size:404.2969%;}}
+@media screen and (min-width: 440px) {html{font-size:429.6875%;}}
+@media screen and (min-width: 480px) {html{font-size:468.75%;}}
+@media screen and (min-width: 520px) {html{font-size:507.8125%;}}
+@media screen and (min-width: 560px) {html{font-size:546.875%;}}
+@media screen and (min-width: 600px) {html{font-size:585.9375%;}}
+@media screen and (min-width: 640px) {html{font-size:625%;}}
+@media screen and (min-width: 680px) {html{font-size:664.0625%;}}
+@media screen and (min-width: 720px) {html{font-size:703.125%;}}
+@media screen and (min-width: 760px) {html{font-size:742.1875%;}}
+@media screen and (min-width: 800px) {html{font-size:781.25%;}}
+@media screen and (min-width: 960px) {html{font-size:937.5%;}}
