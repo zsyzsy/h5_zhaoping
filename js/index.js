@@ -18,10 +18,10 @@ $(function(){
 		}
 	});
 
+
+
 	var bodyWidth = window.screen.width;
 	var bodyHeight = window.screen.height;
-	//alert(bodyWidth);
-	//alert(bodyHeight);
 	if(bodyWidth==320 && bodyHeight==480){  //iphne4
 		$(".page1_3").css({"top":"31%"});
 		$(".page1_1").css("width","75%");
@@ -50,7 +50,36 @@ $(function(){
 	}
 	if(bodyWidth==320 && bodyHeight==568){
 		$(".page_67").css({"marginTop":"10%"});
+	}
+	if(bodyWidth==320 && bodyHeight==480){  //iphne5
+		$(".page1_1").css("width","75%");
+		$(".page1_5").css("height","16%");
+		$(".page2_2_1").css({"marginTop":"16%","marginLeft":"27%"});
+		$(".page2_3_1").css({"marginTop":"39%"});
+		$(".page2_4_1").css({"marginTop":"18%"});
+		$(".page2_6_1").css({"marginTop": "1%"});
+		$(".page2_6_2").css({"top": "-2%"});
+		$(".page2_6_3").css({"top": "9%"});
+		$(".page3_4").css({backgroundPosition:"0% 0%",backgroundSize:"103%"});
+		$(".page3_text_text").css("lineHeight","12px");
+		$(".page3_text").css("bottom","27%");
+		$(".page4_1").css({"width":"65%"});
+		$(".page4_zhiwei").css({"margin":"-3% auto 0;"});
+		$(".page5_7").css({"bottom":"32%"});
+		$("ul.page6_fuli").css({"lineHeight":"20px"});
+		$(".page6_1").css({"backgroundSize":"84%"});
+		$(".page6_dingwei").css({"height":"24%"});
+		$(".page6_naozhong,.page6_liwu").css({"height":"18%"});
+		$(".page6_jinqian").css({"height":"20%"});
+		$(".page7_2").css({"top":"53%"});
+		$(".page7_yuan").css({"top":"66%"});
+		$(".page7_tel").css({"top":"75%","left": "20%"});
+		$(".page7_text").css({"top":"77%"});
+	}
+	if(bodyWidth==320 && bodyHeight==568){
+		$(".page_67").css({"marginTop":"10%"});
 		$(".page3_text_text").css({"lineHeight":"15px"});
+		$(".page3_text").css("bottom","25%");
 	}
 	if(bodyWidth==360 && bodyHeight==640){  //360 640
 		$(".page1_1").css("width","80%");
@@ -90,8 +119,8 @@ $(function(){
 	if(bodyWidth==375 && bodyHeight==667){  //iphne6
 		$(".page1_5 ").css({"height":"15%"});
 		$(".page1_1 ").css({"width":"82%"});
-		$(".page2_2_1").css({"marginTop":"18%","marginLeft":"27%"});
-		$(".page2_3_1").css({"marginTop":"44%"});
+		$(".page2_2_1").css({"marginTop":"17%","marginLeft":"26%"});
+		$(".page2_3_1").css({"marginTop":"40%"});
 		$(".page2_4_1").css({"marginTop":"19%"});
 		$(".page2_6_1").css({"marginTop":"-16%"});
 		$(".page3_1 ").css({"height":"52%"});
@@ -113,10 +142,10 @@ $(function(){
 		$(".page6_naozhong").css("height","26%");
 		$(".page6_liwu").css("height","26%");
 		$(".page6_jinqian").css("height","26%");
-		$(".page7_2").css("top","45%");
-		$(".page7_yuan").css({"top":"60%","left":"28%"});
+		$(".page7_2").css("top","48%");
+		$(".page7_yuan").css({"top":"65%","left":"28%"});
 		$(".page7_bottom").css("height","8%");
-		$(".page7_tel").css("top","70%");
+		$(".page7_tel").css("top","75%");
 		$(".page7_tel_tel").css("left","-8%");
 		$(".page7_num").css({"fontSize":"20px","left":"10%"});
 		$(".page7_text").css({"fontSize":"14px","top":"77%","lineHeight":"24px"});
@@ -130,9 +159,6 @@ $(function(){
 		$(".page5_text").css({fontSize:"14px","width":"93%","lineHeight":"21px"});
 		$(".page7_text").css({"fontSize":"14px"});
 	}
-
-
-
 	//音乐
 	var bgAudio = new Audio();
 	bgAudio.loadStatus = 'unload';
@@ -184,4 +210,3 @@ $(function(){
 		playAudio();
 	};
 });
-
