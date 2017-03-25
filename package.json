@@ -1,0 +1,27 @@
+{
+  "name": "h5_zhaoping",
+  "version": "1.0.0",
+  "description": "You can use the [editor on GitHub](https://github.com/zsyzsy/h5_zhaoping/edit/master/README.md) to maintain and preview the content for your website in Markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zsyzsy/h5_zhaoping.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zsyzsy/h5_zhaoping/issues"
+  },
+  "homepage": "https://github.com/zsyzsy/h5_zhaoping#readme",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-cli": "^0.1.13",
+    "grunt-contrib-clean": "^0.6.0",
+    "grunt-contrib-internal": "^0.4.2",
+    "grunt-contrib-jshint": "^0.11.0",
+    "grunt-contrib-nodeunit": "^0.4.0"
+  }
+}
